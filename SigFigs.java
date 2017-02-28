@@ -1,9 +1,16 @@
+/**
+*   Bryce Cloniger, 2/28/17
+*
+*   An UNFINISHED sigfig calculator. See comment on main page for restrictions.
+*
+**/
+
 public class SigFigs
 {
     public static void main (String[]args)
     {
          toSigFigs(4.957, 3);
-       // System.out.println(a);
+      
     }
 
     public static void toSigFigs(double num, int figs)
@@ -11,13 +18,12 @@ public class SigFigs
         String nums = String.valueOf(num);
         double number = num; 
         int key = figs - 1;
-        double carry = 0.000000000000000000;
+      
 
         if (nums.contains("."))
         key +=1;
        
-      //  else
-    //        return i2.0;
+   
 
         if (nums.charAt(key) > 4 && nums.charAt(key) !='9')
         {
@@ -25,7 +31,7 @@ public class SigFigs
             int newer = old + 1;
             char digit = (char)(newer + '0');
 
-       //     System.out.println(digit);
+     
             
             StringBuilder  finite = new StringBuilder(nums);
             finite.setCharAt(key, digit);
@@ -34,12 +40,12 @@ public class SigFigs
     
             System.out.println(finalFinite);
 
-       //     return 1.00;
+    
         }
 
         else
         {
-         //   return 0.00;
+            System.out.println("Currently Invalid Operation");
         }
     }
 
