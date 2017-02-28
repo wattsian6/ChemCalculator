@@ -9,7 +9,7 @@ public class SigFigs
 {
     public static void main (String[]args)
     {
-         toSigFigs(4.953, 3); //Takes double input and desired sigfigs
+         toSigFigs(0.0, 0); //Takes double input and desired sigfigs. (4.555, 3) will return 4.56
        
     }
 
