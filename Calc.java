@@ -70,11 +70,11 @@ public class Calculator2
      */
     public void initialize2()
     {
-        final int TEXTSIZE = 30;
+        final int TEXTSIZE = 15;
         textPanel = new JPanel();
-        infixExpression = new JTextField(TEXTSIZE);
-        infixExpression.setName("infixExpression");
-        textPanel.add(infixExpression);
+        e1 = new JTextField(TEXTSIZE);
+        e1.setName("e1");
+        textPanel.add(e1);
         frame.add(textPanel, BorderLayout.NORTH);
         calculateButton.addActionListener(new InnerClass());
         clearButton.addActionListener(new InnerClass());
