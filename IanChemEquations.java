@@ -1,7 +1,7 @@
 public class ChemEquations
 {
-public static final double R =  .00000000000000000218
-public static final double H = 6.62607004 * 10^-(34)
+	public static final double R =  .00000000000000000218
+	public static final double H = 6.62607004 * 10^-(34)
 	public Double equation1( Double i, Double f, Double e)
 	{
 		int count = 0;
@@ -55,26 +55,5 @@ public static final double H = 6.62607004 * 10^-(34)
 		}
 		return answer;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	}
-
 }
 
