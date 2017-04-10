@@ -148,7 +148,10 @@ public class Calculator2
                 if (1==1)
                 {
                     field1.setText("");
-                    resultLabel.setText("Result = ");
+		    field2.setText("");
+		    field3.setText("");
+		    field4.setText("");
+                    resultLabel.setText(eqLabel.getText());
                     
                     throw new NullPointerException("Error");
                 }
@@ -189,7 +192,7 @@ public class Calculator2
 	inputS = new JPanel(new BorderLayout());
 	
 	    
-		var1 = new JLabel(" a = ");
+	var1 = new JLabel(" a = ");
         var1.setName("Var1");
         input1.add(var1); 
 	
@@ -288,8 +291,10 @@ public class Calculator2
     public void updateClear()
     {
         field1.setText("");
-        
-        resultLabel.setText("Result = ");
+        field2.setText("");
+	field3.setText("");
+	field4.setText("");
+        resultLabel.setText(eqLabel.getText());
     }
 
 
