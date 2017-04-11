@@ -33,6 +33,11 @@ public class Calculator2
     private JTextField field3;
     private JTextField field4;
     private JLabel resultLabel;
+    private String c1;
+    private String c2;
+    private String c3;
+    private String c4;
+
     private JButton calculateButton;
     private JButton clearButton;
     private JFrame calcFrame;
@@ -47,6 +52,7 @@ public class Calculator2
     private JPanel input3;
     private JPanel input4;
     private JPanel inputS;
+
     private final int xSize = 280;
     private final int ySize = 130;
 
@@ -136,19 +142,44 @@ public class Calculator2
         {
             public void actionPerformed(ActionEvent e)
             {
-
-                if (1==1)
+                String currentQuantity = (String)dropDown.getSelectedItem();
+                c1 = field1.getText();
+                c2 = field2.getText();
+                c3 = field3.getText();
+                c4 = field4.getText();
+                switch(currentQuantity)
                 {
-                    field1.setText("");
-                    field2.setText("");
-                    field3.setText("");
-                    field4.setText("");
-                    resultLabel.setText(eqLabel.getText());
+                    case "Boyle's Law":
+                        //boylesPandV(c1, c2, c3, c4);
+                        break;
+                    case "Percent Yield":
+                        //percentYield(c1, c2, c3);
+                        break;
+                    case "Temperature":
+                        //??
+                        break;
+                    case "Ideal Gas Equation":
+                        //idealGasEqu(c1, c2, c3, c4);
+                        break;
+                    case "Potential Energy":
+                        //potentialEnergy(c1, c2, c3, c4);
+                        break;
+                    case "Molarity":
+                        //molarity(c1, c2, c3);
+                        break;
+                    case "Electron Energy, nth State":
+                        //equation2(c1, c2);
+                        break;
+                    case "Photon Energy":
+                        //equation1(c1, c2, c3);
+                        break;
+                    case "DeBroglie Relationship":
+                        //
+                        break;
+                    default:
+                        break;
 
-                    throw new NullPointerException("Error");
                 }
-                resultLabel.setText("Result");
-
             }
         });
 
@@ -170,7 +201,7 @@ public class Calculator2
                         un4.setVisible(true);
                         break;
                     case "Percent Yield":
-                        eqLabel.setText("% yield = actual / theoretical * 100%")                                                                                                                                                             ;
+                        eqLabel.setText("% yield = actual / theoretical * 100%");
                         var3.setVisible(true);
                         field3.setVisible(true);
                         un3.setVisible(true);
@@ -179,7 +210,7 @@ public class Calculator2
                         un4.setVisible(false);
                         break;
                     case "Temperature":
-                        eqLabel.setText("K = C + 273.15 \n F = ((C * 9 / 5) + 32                                                                                                                                                             )");
+                        eqLabel.setText("K = C + 273.15 \n F = ((C * 9 / 5) + 32)");
                         var3.setVisible(true);
                         field3.setVisible(true);
                         un3.setVisible(true);
