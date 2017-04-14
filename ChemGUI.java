@@ -193,6 +193,14 @@ public class Calculator2
                 {
                     case "Boyle's Law":
                         eqLabel.setText("P1*V1 = P2*V2");
+                        var1.setText("P1 = ");
+                        un1.setText("Pa");
+                        var2.setText("V1 = ");
+                        un2.setText("L");
+                        var3.setText("P2 = ");
+                        un3.setText("Pa");
+                        var4.setText("V2 = ");
+                        un4.setText("L");
                         var3.setVisible(true);
                         field3.setVisible(true);
                         un3.setVisible(true);
@@ -202,6 +210,14 @@ public class Calculator2
                         break;
                     case "Percent Yield":
                         eqLabel.setText("% yield = actual / theoretical * 100%");
+                        var1.setText("Y = ");
+                        un1.setText("%");
+                        var2.setText("A = ");
+                        un2.setText("%");
+                        var3.setText("T = ");
+                        un3.setText("%");
+                        var4.setText(" = ");
+                        un4.setText("");
                         var3.setVisible(true);
                         field3.setVisible(true);
                         un3.setVisible(true);
@@ -211,6 +227,12 @@ public class Calculator2
                         break;
                     case "Temperature":
                         eqLabel.setText("K = C + 273.15 \n F = ((C * 9 / 5) + 32)");
+                        var1.setText("K = ");
+                        un1.setText("K");
+                        var2.setText("C = ");
+                        un2.setText("C");
+                        var3.setText("F = ");
+                        un3.setText("F");
                         var3.setVisible(true);
                         field3.setVisible(true);
                         un3.setVisible(true);
@@ -220,6 +242,14 @@ public class Calculator2
                         break;
                     case "Ideal Gas Equation":
                         eqLabel.setText("P*V = n*R*T");
+                        var1.setText("P = ");
+                        un1.setText("Pa");
+                        var2.setText("V = ");
+                        un2.setText("m^3");
+                        var3.setText("n = ");
+                        un3.setText("M");
+                        var4.setText("T = ");
+                        un4.setText("K");
                         var3.setVisible(true);
                         field3.setVisible(true);
                         un3.setVisible(true);
@@ -229,6 +259,14 @@ public class Calculator2
                         break;
                     case "Potential Energy":
                         eqLabel.setText("V = k * q1 * q2 / r");
+                        var1.setText("V = ");
+                        un1.setText("N");
+                        var2.setText("q1 = ");
+                        un2.setText("C");
+                        var3.setText("q2 = ");
+                        un3.setText("C");
+                        var4.setText("r = ");
+                        un4.setText("m");
                         var3.setVisible(true);
                         field3.setVisible(true);
                         un3.setVisible(true);
@@ -238,6 +276,12 @@ public class Calculator2
                         break;
                     case "Molarity":
                         eqLabel.setText("Molarity = moles / solution");
+                        var1.setText("N = ");
+                        un1.setText("count");
+                        var2.setText("M = ");
+                        un2.setText("moles");
+                        var3.setText("v = ");
+                        un3.setText("L");
                         var3.setVisible(true);
                         field3.setVisible(true);
                         un3.setVisible(true);
@@ -247,6 +291,10 @@ public class Calculator2
                         break;
                     case "Electron Energy, nth State":
                         eqLabel.setText("E = -R * 1 / n^2");
+                        var1.setText("E = ");
+                        un1.setText("J");
+                        var2.setText("n = ");
+                        un2.setText(" ");
                         var3.setVisible(false);
                         field3.setVisible(false);
                         un3.setVisible(false);
@@ -256,6 +304,12 @@ public class Calculator2
                         break;
                     case "Photon Energy":
                         eqLabel.setText("E = R * (1/ni^2 - 1/nf^2)");
+                        var1.setText("E = ");
+                        un1.setText("J");
+                        var2.setText("ni = ");
+                        un2.setText(" ");
+                        var3.setText("nf = ");
+                        un3.setText(" ");
                         var3.setVisible(true);
                         field3.setVisible(true);
                         un3.setVisible(true);
@@ -265,12 +319,18 @@ public class Calculator2
                         break;
                     case "DeBroglie Relationship":
                         eqLabel.setText("lambda = h / (m * v)");
+                        var1.setText("lambda = ");
+                        un1.setText("m");
+                        var2.setText("m = ");
+                        un2.setText("kg");
+                        var3.setText("v = ");
+                        un3.setText("m/s");
                         var3.setVisible(true);
                         field3.setVisible(true);
                         un3.setVisible(true);
-                        var4.setVisible(true);
-                        field4.setVisible(true);
-                        un4.setVisible(true);
+                        var4.setVisible(false);
+                        field4.setVisible(false);
+                        un4.setVisible(false);
                         break;
                     default:
                         break;
