@@ -356,7 +356,7 @@ public class Calculator2
         inputS = new JPanel(new BorderLayout());
 
 
-        var1 = new JLabel("a = ");
+        var1 = new JLabel("P1 = ");
         var1.setName("Var1");
         input1.add(var1);
 
@@ -365,12 +365,12 @@ public class Calculator2
         field1.setColumns(10);
         input1.add(field1);
 
-        un1 = new JLabel("m");
+        un1 = new JLabel("Pa");
         un1.setName("Un1");
         input1.add(un1);
 
 
-        var2 = new JLabel("x = ");
+        var2 = new JLabel("V1 = ");
         var2.setName("Var2");
         input2.add(var2);
 
@@ -379,12 +379,12 @@ public class Calculator2
         field2.setColumns(10);
         input2.add(field2);
 
-        un2 = new JLabel("m/s");
+        un2 = new JLabel("L");
         un2.setName("Un2");
         input2.add(un2);
 
 
-        var3 = new JLabel("m = ");
+        var3 = new JLabel("P2 = ");
         var3.setName("Var3");
         input3.add(var3);
 
@@ -393,11 +393,11 @@ public class Calculator2
         field3.setColumns(10);
         input3.add(field3);
 
-        un3 = new JLabel("J");
+        un3 = new JLabel("Pa");
         un3.setName("Un3");
         input3.add(un3);
 
-        var4 = new JLabel("b = ");
+        var4 = new JLabel("V2 = ");
         var4.setName("Var4");
         input4.add(var4);
 
@@ -406,7 +406,7 @@ public class Calculator2
         field4.setColumns(10);
         input4.add(field4);
 
-        un4 = new JLabel("N    ");
+        un4 = new JLabel("L");
         un4.setName("Un4");
         input4.add(un4);
 
