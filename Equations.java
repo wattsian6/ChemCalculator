@@ -93,7 +93,7 @@ public class Equations {
 			return ce + 273.15;
 		}
 		if (ce == null) {
-			return ((fa - 32) * (9.0 / 5.0)) + 273.15;
+			return ((fa - 32) * (5.0 / 9.0)) + 273.15;
 		}
 		return null;
 	}
