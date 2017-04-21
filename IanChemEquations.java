@@ -33,7 +33,7 @@ public class ChemEquations
 		return answer;	
 	}
 
-	public  Double equation2(Double e, Double n)
+	public Double equation2(Double e, Double n)
 	{
 		int count = 0;
 		Double answer = 0
