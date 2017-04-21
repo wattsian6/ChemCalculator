@@ -140,8 +140,10 @@ public class Calculator2
 
         calculateButton.addActionListener(new ActionListener()
         {
+            
             public void actionPerformed(ActionEvent e)
             {
+                String ans = "";
                 String currentQuantity = (String)dropDown.getSelectedItem();
                 c1 = field1.getText();
                 c2 = field2.getText();
@@ -150,28 +152,46 @@ public class Calculator2
                 switch(currentQuantity)
                 {
                     case "Boyle's Law":
-                        //boylesPandV(c1, c2, c3, c4);
+                       ans = String.valueOf(e.boylesPandV(c1, c2, c3, c4));
                         break;
                     case "Percent Yield":
-                        //percentYield(c1, c2, c3);
+                        ans = String.valueOf(e.percentYield(c1, c2, c3));
                         break;
                     case "Temperature":
-                        //??
+                        if(c1 != null)
+                        {
+                            Double d1 = e.toCe(c3, c1);
+                            Double d2 = e.toFe(c2,c1);
+                            ans = "Ce: " + String.valueOf(d1) + "; Fe: " + String.valueOf(d2)";
+                        }
+                        if(c2 != null)
+                        {
+                            Double d1 = e.toKe(c3, c2);
+                            Double d2 = e.toFe(c2,c1);
+                            ans = "Ke: " + String.valueOf(d1) + "; Fe: " + String.valueOf(d2)";
+                                
+                        }if(c3 != null)
+                        {
+                            Double d1 = e.toCe(c3, c1);
+                            Double d2 = e.toKe(c3,c2);
+                            ans = "Ce: " + String.valueOf(d1) + "; Ke: " + String.valueOf(d2)";
+                            
+                        }
                         break;
                     case "Ideal Gas Equation":
-                        //idealGasEqu(c1, c2, c3, c4);
+                        ans = String.valueOf(e.idealGasEqu(c1, c2, c3, c4));
                         break;
                     case "Potential Energy":
-                        //potentialEnergy(c1, c2, c3, c4);
+                        ans = String.valueOf(e.potentialEnergy(c1, c2, c3, c4));
                         break;
                     case "Molarity":
-                        //molarity(c1, c2, c3);
+                        ans = String.valueOf(e.molarity(c1, c2, c3));
                         break;
                     case "Electron Energy, nth State":
-                        //equation2(c1, c2);
+                        ans = String.valueOf(e.equation2(c1, c2));
                         break;
                     case "Photon Energy":
-                        //equation1(c1, c2, c3);
+                        ans = String.valueOf(e.equation1(c1, c2, c3));
                         break;
                     case "DeBroglie Relationship":
                         //
@@ -179,7 +199,9 @@ public class Calculator2
                     default:
                         break;
 
+                
                 }
+                resultLabel.setText(ans);
             }
         });
 
@@ -440,6 +462,7 @@ public class Calculator2
     */
     public static void main(String[] args)
     {
+        Equations e = new Equations();
         Calculator2 calculator = new Calculator2();
     }
 }
