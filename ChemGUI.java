@@ -213,7 +213,7 @@ public class ChemGUI {
 					ans = String.valueOf(eq.equation1(c1, c2, c3));
 					break;
 				case "DeBroglie Relationship":
-					//
+					ans = String.valueOf(eq.equation3(c1,c3,c2));
 					break;
 				default:
 					break;
