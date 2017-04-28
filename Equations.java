@@ -155,7 +155,8 @@ public class Equations {
 		return answer;
 	}
 
-	public Double equation2(Double e, Double n) {
+	public Double equation2(Double e, Double n) 
+	{
 		int count = 0;
 		Double answer = 0.0;
 		if (e == null) {
@@ -173,7 +174,34 @@ public class Equations {
 		}
 		return answer;
 	}
-
+	public Double equation3(Double l, Double v, Double m,)
+	{
+		//"lambda = H / (m * v)"
+		int count = 0;
+		if (l == null)
+		{
+			answer = (m * v);
+			answer = H / answer;
+			count++;
+		}
+		// v = H/ m* lambda
+		if (v == null)
+		{
+			answer = (m * l);
+			answer = H / answer;
+			count++;
+		}
+		if (m == null)
+		{
+			answer = (v * l);
+			anser = H / answer;
+			count ++
+		}
+		if (count > 1) {
+			System.out.println("Invalid Input");
+			return null;
+		}
+		return answer;
 	/*
 	 * Ideal Gas Equation PV = nRT
 	 */
